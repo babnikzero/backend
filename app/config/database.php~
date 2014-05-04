@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'production',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -75,17 +75,6 @@ return array(
 			'schema'   => 'public',
 		),
 
-		'production' => array(
-			'driver'   => 'pgsql',
-			'port'     =>'5433',
-			'host'     => '192.168.55.55',
-			'database' => 'frontendprj',
-			'username' => 'frontendprj',
-			'password' => 'testpasswd',
-			'charset'  => 'SQL_ASCII',
-			'prefix'   => '',
-			'schema'   => 'public',
-		),
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
 			'host'     => 'localhost',
@@ -125,7 +114,7 @@ return array(
 
 		'cluster' => false,
 
-		'default' => 'production',
+		'default' => array(
 			'host'     => '127.0.0.1',
 			'port'     => 6379,
 			'database' => 0,
