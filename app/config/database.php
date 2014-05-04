@@ -86,6 +86,7 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
+		
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
 			'host'     => 'localhost',
@@ -121,16 +122,5 @@ return array(
 	|
 	*/
 
-	'redis' => array(
-
-		'cluster' => false,
-
-		'default' => 'production',
-			'host'     => '127.0.0.1',
-			'port'     => 6379,
-			'database' => 0,
-		),
-
-	),
 
 );
